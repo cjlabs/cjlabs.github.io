@@ -21,6 +21,8 @@
 ### Features
 - [todo] Landing Page
 - []header
+- [] Contact
+	- [] added map background
 
 ### Improvement
 - [x] add preloader page
