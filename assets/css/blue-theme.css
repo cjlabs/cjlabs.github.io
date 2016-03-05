@@ -38,6 +38,11 @@ a {
     transition: all .35s;
 }
 
+a:hover,
+a:focus {
+    color: #020200;
+}
+
 
 hr {
     max-width: 50px;
