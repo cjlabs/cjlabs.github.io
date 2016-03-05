@@ -94,6 +94,10 @@ aside {
     color: #f05f40;
 }
 
+.navbar-brand>img {
+    width: 60px;
+}
+
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
     color: #eb3812;
@@ -500,7 +504,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 101;
+    z-index: 9999;
     background-color: #212121;
     color: #ffffff; }
 #preloader .txt {
@@ -607,3 +611,40 @@ body {
     height: 150%;
     width: 0;
 }
+
+
+.topbar {
+        background-color: #f9f9f9;
+        position: relative;
+        display: block;
+        padding:0;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .topbar .list-inline {
+        margin:0;
+    }
+
+    .topbar li {
+        font-size: 13px;
+        line-height: 20px;
+        padding:12px 13px;
+        margin:0;
+        border-left: 1px solid #e8e8e8;
+        color: #afb0b4;
+    }
+    .topbar li:first-child {
+        border-left: 1px solid #e8e8e8;
+        border-right: 0 solid #e8e8e8;
+    }
+
+    .topbar li:last-child {
+        border-right: 1px solid #e8e8e8;
+    }
+
+.social li, .widget .social li, .social li {
+    list-style: none;
+    float: left;
+}
+
+
