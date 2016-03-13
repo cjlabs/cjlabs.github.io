@@ -4,11 +4,8 @@ var gulp = require("gulp")
 var bower = require("gulp-bower");
 var concat= require("gulp-concat");
 var rename= require("gulp-rename");
-var config ={
-	sassPath:"./resources/sass",
-	bowerDir:"./bower_components",
-	jsDIr: "./assets/js"
-};
+var config =require("./gulp.config.json");
+		
 
 gulp.task("bower", function(){
 	return bower()
@@ -23,6 +20,9 @@ gulp.task("scripts", function(){
 
 });
 
+gulp.task("css",function(){
+	
+});
 
 gulp.task("icons", function(){
 	return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*')
