@@ -1,0 +1,23 @@
+{
+  "name": "cjlabs.github.io",
+  "homepage": "https://github.com/cjlabs/cjlabs.github.io",
+  "authors": [
+    "puterakahfi <puterakahfi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "wow": "wowjs#^1.1.2"
+  }
+}
