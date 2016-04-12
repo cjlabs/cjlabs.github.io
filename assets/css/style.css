@@ -1,0 +1,23 @@
+body{
+  background: black;
+}
+
+.btn-rounded{
+    border: 1px solid #555;
+    border-radius: 40px;
+    padding: 10px 40px;
+    color: gray;
+}
+
+p{
+  color: gray;
+}
+
+.btn-rounded:hover{
+    border: 1px solid #00acee;
+    border-radius: 30px;
+    padding: 10px 40px;
+    color: white;
+    background: #00acee;
+    text-decoration: none;
+}
