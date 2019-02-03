@@ -5,18 +5,18 @@
     <b-navbar-brand href="/"><strong>Cjlabs</strong></b-navbar-brand>
 
     <b-navbar-nav>
-      <b-nav-item href="#">Codeigniter Class</b-nav-item>
-      <b-nav-item href="#">Laravel Class</b-nav-item>
-      <b-nav-item href="#">Symfony Class</b-nav-item>
-      <b-nav-item href="#">Vuejs Class</b-nav-item>
-      <b-nav-item href="#">React Class</b-nav-item>
+      <b-nav-item href="#">codeigniter</b-nav-item>
+      <b-nav-item href="#">laravel</b-nav-item>
+      <b-nav-item href="#">symfony</b-nav-item>
+      <b-nav-item href="#">nuxtjs</b-nav-item>
+       <b-nav-item href="#">store</b-nav-item>
     </b-navbar-nav>
 
     <b-collapse is-nav id="nav_collapse">
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#">Daftar</b-nav-item>
-        <b-nav-item href="/daftar">Login</b-nav-item>
+        <b-nav-item href="/register">Daftar</b-nav-item>
+        <b-nav-item href="/login">Login</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -24,7 +24,7 @@
 
 <style>
 .container {
-  padding: 25px 0px !important;
+  padding: 15px 0px !important;
   min-height: 10vh !important;
 }
 </style>

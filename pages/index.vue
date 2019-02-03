@@ -1,47 +1,30 @@
 <template>
   <section>
-
-  <Navbar></Navbar>
-<section class="container">
-
-    <div class="col-md-6">
-      <img class="img-fluid" src="~/assets/code.jpg">
-    </div>
-
-    <div class="col-md-6" >
-      <h1 class="title">
-       CJLABS Learning Center
-      </h1>
-      <p class="subtitle">
-        Leverage your skill to next level
-      </p>
-
-      <div class="links">
-        <a
-          href="daftar"
-          class="btn btn-primary"
-        >
-          Daftar
-        </a>
-        <a
-          href="/login"
-          class="btn btn-secondary"
-        >
-          Login
-        </a>
+    <section class="container">
+      <div class="col-md-6">
+        <img class="img-fluid" src="~/assets/code.jpg">
       </div>
-    </div>
-</section>
+
+      <div class="col-md-6">
+        <h1 class="title">CJLABS Learning Center</h1>
+        <p class="subtitle">Leverage your skill to next level</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+        <div class="links">
+          <a href="/register" class="btn btn-lg btn-primary">Daftar</a>
+          <a href="/login" class="btn btn-lg btn-secondary">Login</a>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue'
-
 export default {
-  components: {
-    Navbar
-  }
+  layout: 'default'
 }
 </script>
 
