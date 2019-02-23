@@ -2,12 +2,12 @@
   <section>
     <section class="container text-left">
       <div class="col-md-5">
-        <h1 class="title">Login</h1>
+        <h1 class="title">Reset Password</h1>
 
         <b-form >
           <b-form-group
             id="exampleInputGroup1"
-            label="Username:"
+            label="Email:"
             label-for="exampleInput1"
             description=""
           >
@@ -16,35 +16,13 @@
               type="text"
               v-model="form.username"
               required
-              placeholder="username"
+              placeholder="Masukkan Email"
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group
-            id="exampleInputGroup1"
-            label="Password:"
-            label-for="exampleInput1"
-            description=""
-          >
-            <b-form-input
-              id="exampleInput1"
-              type="password"
-              v-model="form.password"
-              required
-              placeholder=" password"
-            ></b-form-input>
-          </b-form-group>
-
-          <b-button type="submit" variant="primary">Login</b-button>
-          <b-button type="reset" variant="danger">Reset</b-button>
+          <b-button type="reset" variant="danger">Kirim</b-button>
         </b-form>
 
-        <div>
-          <br/>
-          <b-link href="/reset-password">Lupa Password ? </b-link>|
-           <b-link href="/register"> Daftar</b-link>
-          
-      </div>
       </div>
       <div class="col-md-7">
         <img class="img-fluid" src="~/assets/code.jpg">
