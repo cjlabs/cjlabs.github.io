@@ -18,36 +18,15 @@
         </b-card-text>
       </b-card>
     </div>
-  <br/>
-
-    <b-card title="Introduction" sub-title="Card subtitle">
-      <b-card-text>
-        Some quick example text to build on the
-        <em>card title</em> and make up the bulk of the card's
-        content.
-      </b-card-text>
-
-      <b-card-text>
-        <p>
-          ue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
-          Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally
-          adoptable.
-        </p>
-      </b-card-text>
-
-      <a href="#" class="card-link">Download Materi</a>
-      <b-link href="#" class="card-link">Another link</b-link>
-    </b-card>
     <br>
-
-    <b-card title="Setup Environment" sub-title="Setup Vue project">
+  <div v-for="item in materi" :key="item.title" >
+    <b-card   title="sdsd" sub-title="" >
       <b-card-text>
+        {{ item.title }}
         Some quick example text to build on the
         <em>card title</em> and make up the bulk of the card's
         content.
       </b-card-text>
-
-      <br>
 
       <b-card-text>
         <p>
@@ -60,28 +39,8 @@
       <a href="#" class="card-link">Download Materi</a>
       <b-link href="#" class="card-link">Another link</b-link>
     </b-card>
-
-  <br/>
-    <b-card title="Vue Instance" sub-title="Vue Instance">
-      <b-card-text>
-        Some quick example text to build on the
-        <em>card title</em> and make up the bulk of the card's
-        content.
-      </b-card-text>
-
-      <br>
-
-      <b-card-text>
-        <p>
-          ue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
-          Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally
-          adoptable.
-        </p>
-      </b-card-text>
-
-      <a href="#" class="card-link">Download Materi</a>
-      <b-link href="#" class="card-link">Another link</b-link>
-    </b-card>
+    <br/>
+    </div>
 
   </section>
 </template>
@@ -89,6 +48,10 @@
 <script>
 export default {
   layout: 'default',
-  components: {}
+  computed: {
+    materi() {
+      return this.$store.state.materi.list
+    }
+  }
 }
 </script>
