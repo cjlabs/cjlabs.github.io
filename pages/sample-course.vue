@@ -17,7 +17,7 @@
     </b-row>
 
     <br>
-    <b-row class="pt-5">
+    <b-row class="pt-5" id="materi" >
       <b-col sm="12" md="8">
         <h3 class="mb-3 text-center">Materi yang akan anda pelajari</h3>
         <b-row>
@@ -35,8 +35,8 @@
           </div>
         </b-row>
       </b-col>
-      <b-col sm="12" md="4" class="pt-5 mt-5">
-       <img class="img-fluid" src="~/assets/img/task.svg">
+      <b-col sm="12" md="4" class="pt-5 mt-6">
+       <img class="img-fluid mt-6" src="~/assets/img/task.svg">
       </b-col>
     </b-row>
   </section>
@@ -59,10 +59,16 @@ h1 {
 
 .card {
   border: none;
+  background: none;
 }
 
 .card p {
   font-size: 0.9em;
+}
+
+#materi
+{
+  background: url('~assets/img/bg1.svg')  no-repeat bottom left
 }
 </style>
 <script>

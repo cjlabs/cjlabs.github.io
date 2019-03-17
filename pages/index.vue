@@ -1,8 +1,8 @@
 <template>
-  <section class="container">
+  <section class="container" id="head">
     <b-row>
       <b-col cols="6" class="text-left">
-        <h1>Welcome</h1>
+        <h1>Selamat Datang </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -77,6 +77,7 @@ export default {
 <style>
 .card {
   border: none;
+  background: none;
 }
 .subtitle {
   font-weight: 300;
@@ -87,5 +88,9 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+#head {
+  background: url('~assets/img/bg1.svg') no-repeat bottom left;
 }
 </style>
