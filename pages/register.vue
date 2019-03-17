@@ -1,12 +1,12 @@
 <template>
   <section>
     <section class="container text-left">
-      <div class="col-md-5">
-        <h1 class="title">Daftar</h1>
+      <div class="col-md-5 pl-0">
+        <h3>Daftar</h3>
 
         <b-form>
           <b-form-group id="email" label="Email:" label-for="email" description>
-            <b-form-input id="email" type="email" v-model="form.email" required placeholder="email"></b-form-input>
+            <b-form-input id="email" required type="email" v-model="form.email" placeholder="email"></b-form-input>
           </b-form-group>
 
           <b-form-group id="name" label="Nama:" label-for="name" description>
@@ -33,11 +33,20 @@
             ></b-form-input>
           </b-form-group>
 
+          <b-form-group id="confirm" label="Referal Code:" label-for="confirm" description>
+            <b-form-input
+              id="password"
+              type="text"
+              v-model="form.name"
+              placeholder="Masukkan Referal Code"
+            ></b-form-input>
+          </b-form-group>
+
           <b-button type="submit" variant="primary">Daftar</b-button>
           <b-link href="/login">Login</b-link>
         </b-form>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-7">
         <img class="img-fluid" src="~/assets/img/profile.svg">
       </div>
     </section>

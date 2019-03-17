@@ -1,15 +1,15 @@
 <template>
   <section>
-    <section class="container text-left">
+    <section class="container text-left pl-0 ml-0">
       <div class="col-md-5">
         <h1 class="title">Login</h1>
 
-        <b-form >
+        <b-form>
           <b-form-group
             id="exampleInputGroup1"
             label="Username:"
             label-for="exampleInput1"
-            description=""
+            description
           >
             <b-form-input
               id="exampleInput1"
@@ -24,7 +24,7 @@
             id="exampleInputGroup1"
             label="Password:"
             label-for="exampleInput1"
-            description=""
+            description
           >
             <b-form-input
               id="exampleInput1"
@@ -40,13 +40,12 @@
         </b-form>
 
         <div>
-          <br/>
-          <b-link href="/reset-password">Lupa Password ? </b-link>|
-           <b-link href="/register"> Daftar</b-link>
-          
+          <br>
+          <b-link href="/reset-password">Lupa Password ?</b-link>|
+          <b-link href="/register">Daftar</b-link>
+        </div>
       </div>
-      </div>
-      <div class="col-md-7">
+      <div class="col-md-5">
         <img class="img-fluid" src="~/assets/img/authentication.svg">
       </div>
     </section>

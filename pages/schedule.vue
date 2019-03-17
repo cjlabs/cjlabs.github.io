@@ -1,25 +1,23 @@
 <template>
   <section class="container">
     <b-row class="text-left">
-      <b-col md="7">
-        <h1>Symfony Framework</h1>
-        <h6 class="mb-3">Level : Pemula | Jumlah Pertemuan : 12 @2jam | Kelas : Offline</h6>
+      <b-col cols="7">
+        <h1>Jadwal Kelas</h1>
         <p>
           What could be more useful than an application developed by users for their own needs? This is the story of the genesis of Symfony – born from the imagination of the web designers at SensioLabs, a web developer in its own right. Symfony was made available to everyone under an Open Source license. This benefits other developers, who also have the ability to improve it by adding their own modules. All this was done in an environment of Best Practices,
           standardization and interoperability of applications.
         </p>
         <br>
-        <b-button href="#" variant="primary">Daftar</b-button>
       </b-col>
-      <b-col md="5" class="d-none d-lg-block">
-        <img class="img-fluid" src="~/assets/img/programming.svg">
+      <b-col cols="5">
+        <img class="img-fluid" src="~/assets/img/schedule.svg">
       </b-col>
     </b-row>
 
     <br>
     <b-row class="pt-5">
-      <b-col sm="12" md="8">
-        <h3 class="mb-3 text-center">Materi yang akan anda pelajari</h3>
+      <b-col cols="8">
+        <h3>Materi yang akan anda pelajari</h3>
         <b-row>
           <div v-for="item in materi" :key="item.title" class="col-sm-6">
             <b-card no-body>
@@ -34,9 +32,6 @@
             <br>
           </div>
         </b-row>
-      </b-col>
-      <b-col sm="12" md="4" class="pt-5 mt-5">
-       <img class="img-fluid" src="~/assets/img/task.svg">
       </b-col>
     </b-row>
   </section>
@@ -53,7 +48,7 @@ h6 {
 }
 h1 {
   font-size: 3.5em;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
