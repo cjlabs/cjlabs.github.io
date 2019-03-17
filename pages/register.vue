@@ -37,8 +37,8 @@
           <b-link href="/login">Login</b-link>
         </b-form>
       </div>
-      <div class="col-md-7">
-        <img class="img-fluid" src="~/assets/code.jpg">
+      <div class="col-md-6">
+        <img class="img-fluid" src="~/assets/img/profile.svg">
       </div>
     </section>
   </section>

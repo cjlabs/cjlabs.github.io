@@ -47,7 +47,7 @@
       </div>
       </div>
       <div class="col-md-7">
-        <img class="img-fluid" src="~/assets/code.jpg">
+        <img class="img-fluid" src="~/assets/img/authentication.svg">
       </div>
     </section>
   </section>

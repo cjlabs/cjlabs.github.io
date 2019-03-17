@@ -1,50 +1,60 @@
 <template>
   <section class="container">
-    <div>
-      <b-card
-        overlay
-        img-src="https://picsum.photos/900/250/?image=3"
-        img-alt="Card Image"
-        text-variant="white"
-        title="kursus vue js"
-        sub-title="Subtitle"
-      >
-        <b-card-text>
-          <p>
-            ue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
-            If you’d like to learn more about Vue before diving in, we created a video walking through the core principles and a sample project.
-            If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the Comparison with Other Frameworks.
-          </p>
-        </b-card-text>
-      </b-card>
-    </div>
-    <br>
-  <div v-for="item in materi" :key="item.title" >
-    <b-card   title="sdsd" sub-title="" >
-      <b-card-text>
-        {{ item.title }}
-        Some quick example text to build on the
-        <em>card title</em> and make up the bulk of the card's
-        content.
-      </b-card-text>
-
-      <b-card-text>
+    <b-row class="text-left">
+      <b-col cols="7">
+        <h1>Symfony Framework</h1>
         <p>
-          ue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
-          Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally
-          adoptable.
+          What could be more useful than an application developed by users for their own needs? This is the story of the genesis of Symfony – born from the imagination of the web designers at SensioLabs, a web developer in its own right. Symfony was made available to everyone under an Open Source license. This benefits other developers, who also have the ability to improve it by adding their own modules. All this was done in an environment of Best Practices,
+          standardization and interoperability of applications.
         </p>
-      </b-card-text>
+        <br>
+        <b-button href="#" variant="primary">Daftar</b-button>
+      </b-col>
+      <b-col cols="5">
+        <img class="img-fluid" src="~/assets/img/code-typing.svg">
+      </b-col>
+    </b-row>
 
-      <a href="#" class="card-link">Download Materi</a>
-      <b-link href="#" class="card-link">Another link</b-link>
-    </b-card>
-    <br/>
-    </div>
+    <br>
+    <b-row>
+      <b-col cols="8">
+        <b-row>
+          <div v-for="item in materi" :key="item.title" class="col-sm-6">
+            <b-card no-body>
+              <b-card-body class="pl-0">
+                <b-link to="/">
+                  <h4>{{ item.title }}</h4>
+                </b-link>
+                <p class="card-text">{{ item.body }}</p>
+              </b-card-body>
+            </b-card>
 
+            <br>
+          </div>
+        </b-row>
+      </b-col>
+    </b-row>
   </section>
 </template>
 
+
+<style>
+h1 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+}
+p {
+  color: #3f3d56;
+}
+.card p {
+  font-size: 0.9em;
+}
+</style>
 <script>
 export default {
   layout: 'default',

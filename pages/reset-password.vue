@@ -1,13 +1,13 @@
 <template>
   <section>
     <section class="container text-left">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <h1 class="title">Reset Password</h1>
 
         <b-form >
           <b-form-group
             id="exampleInputGroup1"
-            label="Email:"
+            label=""
             label-for="exampleInput1"
             description=""
           >
@@ -24,8 +24,8 @@
         </b-form>
 
       </div>
-      <div class="col-md-7">
-        <img class="img-fluid" src="~/assets/code.jpg">
+      <div class="col-md-6">
+        <img class="img-fluid" src="~/assets/img/forgot-password.svg">
       </div>
     </section>
   </section>
