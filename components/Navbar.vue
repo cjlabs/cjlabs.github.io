@@ -1,34 +1,57 @@
 <template>
-  <b-navbar toggleable="md" type="light" class="container fixed mb-5">
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-    <b-navbar-brand href="/">
-      <strong>CJLABS</strong>
-    </b-navbar-brand>
-    <b-collapse is-nav id="nav_collapse">
-      <b-navbar-nav>
-        <b-nav-item href="/sample-course">Symfony</b-nav-item>
-        <b-nav-item href="#">Laravel</b-nav-item>
-        <b-nav-item href="#">Vue</b-nav-item>
-        <b-nav-item href="/schedule">Jadwal</b-nav-item>
-        <b-nav-item
-          href="https://gitlab.com/cjlabs-projects/cjlabs-front/issues"
-          target="_blank"
-        >Milestone</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">CJLABS</a>
+ 
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-    <b-collapse is-nav id="nav_collapse">
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item href="/register">Daftar</b-nav-item>
-        <b-nav-item href="/login">Login</b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="/symfony" class="navbar-item">Symfony</a>
+        <a class="navbar-item">Vue</a>
+        <a class="navbar-item">Laravel</a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">More</a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">About</a>
+            <a class="navbar-item">Jobs</a>
+            <a class="navbar-item">Contact</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Report an issue</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Daftar</strong>
+            </a>
+            <a class="button is-info">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <style>
-.navbar-brand {
-  color: #00c380;
+.navbar
+{
+  margin: 20px auto;
 }
 </style>

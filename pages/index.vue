@@ -1,8 +1,9 @@
 <template>
   <section class="container" id="head">
-    <b-row>
-      <b-col cols="6" class="text-left">
-        <h1>Selamat Datang </h1>
+    <div class="columns">
+      <div class="column is-three-fifths">
+        <h1 class="title">Selamat Datang</h1>
+        <h2 class="subtitle is-size-4">Leverage your skill to the next level</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -15,23 +16,25 @@
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <div class="links">
-          <a href="/register" class="btn btn-md btn-primary">Daftar</a>
-          <a href="/login" class="btn btn-md btn-secondary">Login</a>
+          <a href="/register" class="button is-primary">Daftar</a>
+          <a href="/login" class="button is-info">Login</a>
         </div>
-      </b-col>
-      <b-col cols="4" offset-md="1">
+      </div>
+      <div class="column">
         <img class="img-fluid" src="~/assets/img/laravel-vue.svg">
-      </b-col>
-    </b-row>
-    <b-row class="pt-5">
+      </div>
+    </div>
+    
+
+    <div class="columns">
       <b-col cols="7">
-        <h3>How cjlabs Works ?</h3>
+        <h1 class="title">How cjlabs Works ?</h1>
         <b-row>
           <div v-for="item in howcjlabs" :key="item.title" class="col-sm-6">
             <b-card no-body>
               <b-card-body class="pl-0">
                 <b-link to="/">
-                  <h5>{{ item.title }}</h5>
+                  <h3 class=" is-size-5">{{ item.title }}</h3>
                 </b-link>
                 <p class="card-text">{{ item.body }}</p>
               </b-card-body>
@@ -45,9 +48,8 @@
       <b-col cols="5" class="mt-5">
         <img class="img-fluid" src="~/assets/img/bookmarks.svg">
       </b-col>
-    </b-row>
+   
 
-    <b-row>
       <b-col cols="12" class="mt-5 mb-5">
         <blockquote class="blockquote text-center">
           <p
@@ -59,13 +61,12 @@
           </footer>
         </blockquote>
       </b-col>
-    </b-row>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
-  layout: 'default',
   computed: {
     howcjlabs() {
       return this.$store.state.howcjlabs.list
