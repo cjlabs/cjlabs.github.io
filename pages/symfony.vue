@@ -26,14 +26,18 @@
         <div class="column is-7">
           <div class="column is-12">
             <h3 class="title is-4 text-center">Materi yang akan anda pelajari</h3>
-            <hr>
+       
           </div>
           <div v-for="item in materi" :key="item.title" class="column is-6 is-inline-block">
-            <h5 class="subtitle is-5 is-marginless">{{ item.title }}</h5>
+            <div class="card has-shadow">
+              <div class="card-content">
+                <h5 class="title is-5">{{ item.title }}</h5> <hr/>
 
-            <p class>{{ item.body }}</p>
+                <p class>{{ item.body }}</p>
 
-            <br>
+                <br>
+              </div>
+            </div>
           </div>
         </div>
         <div class="column is-4">

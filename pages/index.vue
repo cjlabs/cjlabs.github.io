@@ -18,8 +18,8 @@
         <br>
         <br>
         <div class="links">
-          <a href="/register" class="button is-primary is-large">Daftar</a>
-          <a href="/login" class="button is-info is-large">Login</a>
+          <a href="/register" class="button is-primary">Daftar</a>
+          <a href="/login" class="button is-info">Login</a>
         </div>
       </div>
       <div class="column is-4">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="column is-3 is-inline-block" v-for="item in howcjlabs" :key="item.title">
-          <div class="card is-shadowless">
+          <div class="card has-shadow">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img class="img-fluid" :src="'img/' + item.image">
@@ -50,7 +50,9 @@
                 </div>
               </div>
 
-              <div class="content">{{ item.body }}</div>
+              <div class="content">
+                <p>{{ item.body }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -82,4 +84,7 @@ export default {
 </script>
 
 <style>
+.card-image {
+  padding: 15px;
+}
 </style>

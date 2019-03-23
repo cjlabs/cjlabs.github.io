@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <fa :icon="['fas', 'home']"/>&nbsp;
+          <fa :icon="['fas', 'code']"/>&nbsp;
           <strong>CJLABS</strong>
         </a>
 
@@ -64,6 +64,9 @@
 
 <style>
 .navbar {
-  margin: 20px auto;
+  padding: 25px auto;
+  margin: 0px;
+  margin-bottom: 10px;
+  
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <!-- Footer -->
-  <section class="container mt-3 mb-3">
-    <footer class="footer has-background-white	">
+  <footer class="footer has-background-white has-shadow">
+    <section class="container mt-3 mb-3">
       <div class="content has-text-centered">
         <p>
           <strong>CJLABS</strong> by
@@ -16,8 +16,8 @@
           </a>
         </p>
       </div>
-    </footer>
-  </section>
+    </section>
+  </footer>
 </template>
 
 <style>
