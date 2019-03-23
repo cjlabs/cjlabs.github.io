@@ -1,9 +1,9 @@
 <template>
   <section class="container" id="head">
-    <div class="columns">
-      <div class="column is-three-fifths">
-        <h1 class="title">Selamat Datang</h1>
-        <h2 class="subtitle is-size-4">Leverage your skill to the next level</h2>
+    <section class="columns">
+      <div class="column is-6">
+        <h1 class="title is-1">Selamat Datang</h1>
+        <h2 class="subtitle is-size-5">Belajar vue, symfony, laravel</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -15,53 +15,59 @@
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
+        <br>
+        <br>
         <div class="links">
-          <a href="/register" class="button is-primary">Daftar</a>
-          <a href="/login" class="button is-info">Login</a>
+          <a href="/register" class="button is-primary is-large">Daftar</a>
+          <a href="/login" class="button is-info is-large">Login</a>
         </div>
       </div>
-      <div class="column">
-        <img class="img-fluid" src="~/assets/img/laravel-vue.svg">
+      <div class="column is-4">
+        <figure class="image image is-1by1">
+          <img class="img-fluid" src="~/assets/img/laravel-vue.svg">
+        </figure>
       </div>
-    </div>
-    
+    </section>
+    <br>
+    <br>
+    <section class="columns">
+      <div class="column is-12">
+        <div class="column is-12">
+          <h1 class="title has-text-centered">How cjlabs Works ?</h1>
+        </div>
 
-    <div class="columns">
-      <b-col cols="7">
-        <h1 class="title">How cjlabs Works ?</h1>
-        <b-row>
-          <div v-for="item in howcjlabs" :key="item.title" class="col-sm-6">
-            <b-card no-body>
-              <b-card-body class="pl-0">
-                <b-link to="/">
-                  <h3 class=" is-size-5">{{ item.title }}</h3>
-                </b-link>
-                <p class="card-text">{{ item.body }}</p>
-              </b-card-body>
-            </b-card>
+        <div class="column is-3 is-inline-block" v-for="item in howcjlabs" :key="item.title">
+          <div class="card is-shadowless">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img class="img-fluid" :src="'img/' + item.image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5">{{ item.title }}</p>
+                </div>
+              </div>
 
-            <br>
+              <div class="content">{{ item.body }}</div>
+            </div>
           </div>
-        </b-row>
-      </b-col>
+        </div>
+      </div>
+    </section>
 
-      <b-col cols="5" class="mt-5">
-        <img class="img-fluid" src="~/assets/img/bookmarks.svg">
-      </b-col>
-   
-
-      <b-col cols="12" class="mt-5 mb-5">
-        <blockquote class="blockquote text-center">
-          <p
-            class="mb-0"
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            Someone famous in
-            <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </b-col>
-    </div>
+    <section class="column">
+      <blockquote class="blockquote has-text-centered">
+        <p
+          class="mb-0"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          Someone famous in
+          <cite title="Source Title">Source Title</cite>
+        </footer>
+      </blockquote>
+    </section>
   </section>
 </template>
 
@@ -76,22 +82,4 @@ export default {
 </script>
 
 <style>
-.card {
-  border: none;
-  background: none;
-}
-.subtitle {
-  font-weight: 300;
-  font-size: 35px;
-  color: #526488;
-  word-spacing: 5px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-#head {
-  background: url('~assets/img/bg1.svg') no-repeat bottom left;
-}
 </style>

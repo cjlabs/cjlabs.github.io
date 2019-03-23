@@ -5,22 +5,39 @@ export const state = () => ({
   list: [{
       title: 'Daftar',
       subtitle: 'subjudul',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: 'bookmarks.svg',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod . '
     },
     {
       title: 'Pilih Kursus',
       subtitle: 'subjudul',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: 'undraw_choose_80qg.svg',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod . '
     },
     {
-      title: 'Pilih Metode Pembayaran',
+      title: 'Pilih Materi',
       subtitle: 'subjudul',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: 'undraw_to_do_list_a49b.svg',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod . '
+    },
+    {
+      title: 'Pilih Metode Pembayaran ',
+      subtitle: 'subjudul',
+      image: 'undraw_wallet_aym5.svg',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod . '
     },
     {
       title: 'Atur Jadwal',
       subtitle: 'subjudul',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      image: 'undraw_calendar_dutt.svg',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod . '
+    },
+    {
+      title: 'Access Dashboard',
+      subtitle: 'subjudul',
+      image: 'undraw_dashboard_nklg.svg',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod . '
     }
   ]
 })
+
