@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col-5">
-          <h3>Apa yang anda dapatkan di CJLABS</h3>
+          <h4>apa yang anda dapatkan di cjlabs ?</h4>
           <h6 class="subtitle is-size-5">manfaat yang anda dapatkan</h6>
           <hr>
 
@@ -64,6 +64,7 @@
       </div>
     </div>
 
+    <articles></articles>
     <section class="row">
       <blockquote class="blockquote has-text-centered">
         <p
@@ -79,8 +80,12 @@
 </template>
 
 <script>
+import Articles from '~/components/Stisla/Articles'
 export default {
   layout: 'stisla',
+  components: {
+    Articles
+  },
   computed: {
     howcjlabs() {
       return this.$store.state.howcjlabs.list
