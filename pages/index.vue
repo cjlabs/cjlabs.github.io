@@ -4,7 +4,7 @@
       <div class="col-md-6">
         <h1>Selamat Datang</h1>
         <h4 class="subtitle is-size-5">Belajar vue, symfony, git</h4>
-        <br/>
+        <br>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,17 +30,36 @@
     </div>
     <br>
     <br>
-    <br><br>
+    <br>
+    <br>
     <div class="container">
       <div class="row">
-        <div class="col-4" v-for="item in howcjlabs" :key="item.title">
-          <div class="card">
-            <img :src="'img/' + item.image" class="card-img-top img-fluid image-responsive" alt>
-            <div class="card-body">
-              <h5 class="card-title">{{ item.title }}</h5>
-              <p class="card-text">{{ item.body }}</p>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-6" v-for="item in howcjlabs" :key="item.title">
+              <div class="card">
+                <img :src="'img/' + item.image" class="card-img-top img-fluid image-responsive" alt>
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                  <p class="card-text">{{ item.body }}</p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="col-5">
+          <h3>Apa yang anda dapatkan di CJLABS</h3>
+          <h6 class="subtitle is-size-5">manfaat yang anda dapatkan</h6>
+          <hr>
+
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+            <li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
+            <li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li>
+            <li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
+            <li>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</li>
+            <li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          </ul>
         </div>
       </div>
     </div>
