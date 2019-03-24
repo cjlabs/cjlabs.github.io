@@ -17,7 +17,6 @@
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <br>
-        <br>
         <div class="links">
           <a href="/register" class="btn btn-primary shadowless">Daftar</a>
           <a href="/login" class="btn btn-info shadowless">Login</a>
@@ -31,6 +30,7 @@
     </div>
     <br>
     <br>
+    <br><br>
     <div class="container">
       <div class="row">
         <div class="col-4" v-for="item in howcjlabs" :key="item.title">

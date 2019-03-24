@@ -70,6 +70,14 @@
   color: #646d75;
 }
 
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    color: #6C757D;
+    font-weight: 600;
+}
+
+
 .navbar-brand sup {
   font-size: 0.5em;
   top: -1.4em;
