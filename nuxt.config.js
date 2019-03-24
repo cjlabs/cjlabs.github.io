@@ -8,8 +8,7 @@ module.exports = {
    */
   head: {
     title: pkg.name,
-    meta: [
-      {
+    meta: [{
         charset: 'utf-8'
       },
       {
@@ -22,27 +21,12 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [
-      {
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico'
-      },
-      {
-        rel: 'stylesheet',
-        href: '/stisla/modules/bootstrap/css/bootstrap.min.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: '/stisla/css/style.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: '/stisla/css/components.css'
-      }
-    ],
-    script: [
-      {
+    link: [{
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    }],
+    script: [{
         src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
       },
       {
@@ -61,7 +45,10 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '~/assets/css/main.scss'
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -75,7 +62,6 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    'bootstrap-vue/nuxt',
     [
       'nuxt-fontawesome',
       {

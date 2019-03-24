@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  layout: 'dashboard',
+  layout: 'stisla',
   computed: {
     howcjlabs() {
       return this.$store.state.howcjlabs.list
