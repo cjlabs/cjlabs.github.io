@@ -7,7 +7,7 @@
         <div class="col-12 col-md-3 col-lg-3">
           <article class="article article-style-c">
             <div class="article-header">
-              <div class="article-image" data-background="assets/img/news/img13.jpg"></div>
+              <div class="article-image" data-background="../stisla/img/news/img13.jpg"></div>
             </div>
             <div class="article-details">
               <div class="article-category">
