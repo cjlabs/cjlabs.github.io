@@ -8,7 +8,8 @@ module.exports = {
    */
   head: {
     title: pkg.name,
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -21,11 +22,33 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/stisla/modules/bootstrap/css/bootstrap.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/stisla/css/style.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/stisla/css/components.css'
+      }
+    ],
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+      },
+      {
+        src: '/stisla/modules/bootstrap/js/bootstrap.min.js'
+      }
+    ]
   },
 
   /*
@@ -38,10 +61,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    '@/assets/css/main.scss'
-  ],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
 
   /*
    ** Plugins to load before mounting the App
@@ -55,26 +75,32 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    // Or you can customize
-    'nuxt-buefy',
-    ['nuxt-fontawesome', {
-      component: 'fa',
-      imports: [
-        // import whole set
-        {
-          set: '@fortawesome/free-solid-svg-icons',
-          icons: ['fas']
-        },
-        // import 2 icons from set 
-        // please note this is PRO set in this example, 
-        // you must have it in your node_modules to actually import
-        {
-          set: '@fortawesome/free-brands-svg-icons',
-          icons: ['fab']
-        }
-      ]
-    }],
+    'bootstrap-vue/nuxt',
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa',
+        imports: [
+          // import whole set
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          // import 2 icons from set
+          // please note this is PRO set in this example,
+          // you must have it in your node_modules to actually import
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ]
   ],
+  bootstrapVue: {
+    bootstrapCSS: false, // or `css`
+    bootstrapVueCSS: false // or `bvCSS`
+  },
   /*
    ** Axios module configuration
    */

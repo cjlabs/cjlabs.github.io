@@ -50,7 +50,7 @@
   </nav>
 </template>
 
-<style>
+<style scoped>
 .navbar {
   margin: 20px auto;
 }

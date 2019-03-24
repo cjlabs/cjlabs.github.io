@@ -53,6 +53,7 @@
 </style>
 <script>
 export default {
+  layout: 'stisla',
   computed: {
     materi() {
       return this.$store.state.materi.list

@@ -1,68 +1,72 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <fa :icon="['fas', 'code']"/>&nbsp;
-          <strong>CJLABS</strong>
-        </a>
-
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+ <!-- navbar background color -->
+  <!-- navbar -->
+  <section class="container">
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <!-- navbar nav left -->
+    <form class="form-inline mr-auto">
+      <!-- navbar toggler -->
+      <ul class="navbar-nav mr-3">
+        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+      </ul>
+      <!-- navbar search -->
+      <div class="search-element">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
       </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <NuxtLink class="navbar-item" to="/symfony">Symfony</NuxtLink>
-          <NuxtLink class="navbar-item" to>Vue</NuxtLink>
-          <NuxtLink class="navbar-item" to="/series">Seri</NuxtLink>
-
-          <NuxtLink class="navbar-item" to="/dashboard/">Dashboard</NuxtLink>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">About</a>
-              <a class="navbar-item">Jobs</a>
-              <a class="navbar-item">Contact</a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">Report an issue</a>
+    </form>
+    <!-- navbar right -->
+    <ul class="navbar-nav navbar-right">
+      <!-- navbar notification toggle -->
+      <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+        <!-- navbar notification dropdown -->
+        <div class="dropdown-menu dropdown-list dropdown-menu-right">
+          <div class="dropdown-header">Notifications
+            <div class="float-right">
+              <a href="#">View All</a>
             </div>
           </div>
-        </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a target="_blank" class="button" href="https://github.com/cjlabs">
-                <span class="icon">
-                  <fa :icon="['fab', 'github']"/>
-                </span>
-                <span>GitHub</span>
-              </a>
-
-              <a class="button is-primary">
-                <strong>Daftar</strong>
-              </a>
-              <a href="/login" class="button is-info">Log in</a>
-            </div>
+          <!-- navbar notification dropdown content -->
+          <div class="dropdown-list-content">
+            <!-- navbar notification dropdown item -->
+            <a href="#" class="dropdown-item">
+              <div class="dropdown-item-desc">
+                <b>Alfa Zulkarnain</b> has moved task <b>Add logo</b> to <b>Done</b>
+                <div class="time">Yesterday</div>
+              </div>
+            </a>
+            ...
+            ..
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+      <!-- navbar right item -->
+      <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+        <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-title">Logged in 5 min ago</div>
+          <a href="features-profile.html" class="dropdown-item has-icon">
+            <i class="far fa-user"></i> Profile
+          </a>
+          <a href="features-activities.html" class="dropdown-item has-icon">
+            <i class="fas fa-bolt"></i> Activities
+          </a>
+          <a href="features-settings.html" class="dropdown-item has-icon">
+            <i class="fas fa-cog"></i> Settings
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item has-icon text-danger">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </a>
+        </div>
+      </li>
+    </ul>
   </nav>
+  </section>
 </template>
 
-<style>
+<style scoped>
 .navbar {
   padding: 25px auto;
   margin: 0px;

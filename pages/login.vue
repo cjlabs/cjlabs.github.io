@@ -1,6 +1,6 @@
 <template>
     <section >
-
+login is here
     </section>
 </template>
 
@@ -15,7 +15,7 @@ export default {
       show: true
     }
   },
-  layout: 'default'
+  layout: 'stisla'
 }
 </script>
 
