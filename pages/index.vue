@@ -32,7 +32,7 @@
     <br>
     <br>
     <br>
-    <div class="container">
+    <div class="container hide">
       <div class="row">
         <div class="col-7">
           <div class="row">
@@ -95,6 +95,9 @@ export default {
 </script>
 
 <style scoped>
+.hide {
+  display: none;
+}
 .card-image {
   padding: 15px;
 }

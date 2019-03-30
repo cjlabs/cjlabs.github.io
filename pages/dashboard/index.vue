@@ -1,7 +1,7 @@
 <template>
   <section class id="head">
-    <section class="columns">
-      <div class="column is-6">
+    <section class="row">
+      <div class="col-6">
         <h1 class="title is-1">Dashboard</h1>
         <h2 class="subtitle is-size-3">Belajar vue, symfony, laravel</h2>
         <p>
@@ -16,7 +16,7 @@
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="column is-6">
+      <div class="col-6">
         <figure class="image image is-1by1">
           <img class="img-fluid" :src="'../img/undraw_dashboard_nklg.svg'">
         </figure>
